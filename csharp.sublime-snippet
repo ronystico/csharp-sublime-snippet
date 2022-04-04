@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[namespace ${1}
+{
+    public class ${TM_FILENAME/.cs//g}
+    {
+        $0
+    }
+}]]></content>
+    <!-- I need help with namespace detection. I tried what it's below
+        ${TM_DIRECTORY/\//./g} -->
+
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<tabTrigger>classcsharp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<scope>source.cs</scope>
+	<!-- Description lol -->
+	<description>C# Class with name detection</description>
+</snippet>
